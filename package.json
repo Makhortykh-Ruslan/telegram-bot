@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "nodemon src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rimraf public && tsc",
-    "start": "node public/index.ts"
+    "build": "rimraf dist && tsc",
+    "start": "node dist/index.ts"
   },
   "keywords": [],
   "author": "",
@@ -25,6 +25,7 @@
     "typescript": "^5.7.2"
   },
   "dependencies": {
+    "@vercel/node": "^5.0.0",
     "dotenv": "^16.4.5",
     "node-telegram-bot-api": "^0.66.0",
     "tough-cookie": "^4.1.4"
