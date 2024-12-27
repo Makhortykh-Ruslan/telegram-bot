@@ -27,7 +27,7 @@ jobs:
         run: npm install
 
       - name: Build Node App
-        run: rimraf dist && tsc
+        run: rimraf public && tsc
 
       - name: Deploy to Vercel
         uses: amondnet/vercel-action@v20
